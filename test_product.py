@@ -1,7 +1,7 @@
-from projects.student import process_student_data
+from Lab80.product import process_product_data
 
 def test_default_values():
-    result = process_student_data(["student.py"])
+    result = process_product_data(["product.py"])
 
     assert result["name"] == "Niyati Gogri"
     assert result["department"] == "BCA"
@@ -20,7 +20,7 @@ def test_command_line_arguments():
         "80"
     ]
 
-    result = process_student_data(args)
+    result = process_product_data(args)
 
     assert result["name"] == "yashvi"
     assert result["total"] == 225
